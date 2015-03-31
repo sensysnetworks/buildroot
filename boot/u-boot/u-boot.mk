@@ -11,7 +11,7 @@ U_BOOT_BOARD_NAME:=$(call qstrip,$(BR2_TARGET_UBOOT_BOARDNAME))
 # pick some random stable U-Boot version that will be used just to
 # build mkimage.
 ifeq ($(U_BOOT_VERSION),)
-U_BOOT_VERSION=2011.03
+U_BOOT_VERSION=2015.01
 endif
 
 ifeq ($(U_BOOT_VERSION),custom)
@@ -92,7 +92,7 @@ endif
 		$(U_BOOT_CONFIGURE_OPTS) \
 		$(MAKE) -C $(U_BOOT_DIR) \
 		CROSS_COMPILE="$(TARGET_CROSS)" ARCH=$(U_BOOT_ARCH) \
-		$(U_BOOT_BOARD_NAME)_config
+		$(U_BOOT_BOARD_NAME)_defconfig
 	touch $@
 
 $(U_BOOT_DIR)/.header_modified: $(U_BOOT_DIR)/.configured
