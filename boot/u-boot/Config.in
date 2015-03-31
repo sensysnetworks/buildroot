@@ -12,9 +12,12 @@ config BR2_TARGET_UBOOT_BOARDNAME
 
 choice
 	prompt "U-Boot Version"
-	default BR2_TARGET_UBOOT_2011_03
+	default BR2_TARGET_UBOOT_2015_01
 	help
 	  Select the specific U-Boot version you want to use
+
+config BR2_TARGET_UBOOT_2015_01
+	bool "2015.01"
 
 config BR2_TARGET_UBOOT_2011_03
 	bool "2011.03"
@@ -45,6 +48,7 @@ endif
 
 config BR2_TARGET_UBOOT_VERSION
 	string
+	default "2015.01"	if BR2_TARGET_UBOOT_2015_01
 	default "2011.03"	if BR2_TARGET_UBOOT_2011_03
 	default "2010.12"	if BR2_TARGET_UBOOT_2010_12
 	default "2010.09"	if BR2_TARGET_UBOOT_2010_09
