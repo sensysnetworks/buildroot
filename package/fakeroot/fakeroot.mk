@@ -3,9 +3,9 @@
 # fakeroot
 #
 #############################################################
-FAKEROOT_VERSION:=1.9.5
-FAKEROOT_SOURCE:=fakeroot_$(FAKEROOT_VERSION).tar.gz
-FAKEROOT_SITE:=http://snapshot.debian.org/archive/debian/20080427T000000Z/pool/main/f/fakeroot/
+FAKEROOT_VERSION:=1.14.4.orig
+FAKEROOT_SOURCE:=fakeroot_$(FAKEROOT_VERSION).tar.bz2
+FAKEROOT_SITE:=http://ftp.de.debian.org/debian/pool/main/f/fakeroot
 FAKEROOT_CONF_OPT = --program-prefix=''
 
 define FAKEROOT_PATCH_FAKEROOT_IN
