@@ -1,5 +1,5 @@
 exec { 'vim-editor':
-    command => '/usr/bin/update-alternatives --set editor /usr/bin/vim.tiny'
+    command => '/usr/sbin/update-alternatives --set editor /usr/bin/vim'
 }
 
 package { 'epel-release':
@@ -22,15 +22,11 @@ package { 'xemacs-packages-base-el':
     ensure => installed
 }
 
-package { 'xemacs-packages-el':
+package { 'xemacs-el':
     ensure => installed
 }
 
-package { 'xemacs-extra':
-    ensure => installed
-}
-
-package { 'xemacs-extra-el':
+package { 'gcc-c++':
     ensure => installed
 }
 
@@ -67,6 +63,30 @@ package { 'glibc-static':
 }
 
 package { 'git':
+    ensure => installed
+}
+
+package { 'bison':
+    ensure => installed
+}
+
+package { 'flex':
+    ensure => installed
+}
+
+package { 'gettext':
+    ensure => installed
+}
+
+package { 'texinfo':
+    ensure => installed
+}
+
+package { 'cvs':
+    ensure => installed
+}
+
+package { 'subversion':
     ensure => installed
 }
 
