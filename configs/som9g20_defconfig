@@ -25,8 +25,8 @@ BR2_TARGET_ROOTFS_TAR=y
 
 # sensys
 #
-BR2_DL_DIR="/usr/local/buildroot/download"
-BR2_HOST_DIR="/usr/local/buildroot/som9g20"
+BR2_DL_DIR="/usr/local/buildroot/cache"
+BR2_HOST_DIR="/usr/local/som9g20"
 BR2_TARGET_UBOOT_BOARDNAME="at91sam9g20ek_dataflash_cs1"
 BR2_TARGET_DATAFLASHBOOT=y
 BR2_TARGET_DATAFLASHBOOT_AT91RM9200=y

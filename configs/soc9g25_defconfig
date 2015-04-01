@@ -56,8 +56,8 @@ BR2_TARGET_ROOTFS_JFFS2_PAGESIZE=0x800
 BR2_TARGET_ROOTFS_JFFS2_EBSIZE=0x20000
 
 #
-BR2_DL_DIR="/usr/local/buildroot/download"
-BR2_HOST_DIR="/usr/local/buildroot/soc9g20"
+BR2_DL_DIR="/usr/local/buildroot/cache"
+BR2_HOST_DIR="/usr/local/soc9g20"
 BR2_TARGET_UBOOT=y
 BR2_TARGET_UBOOT_BOARDNAME="at91sam9x5ek_nandflash"
 BR2_TARGET_UBOOT_LATEST_VERSION=y
