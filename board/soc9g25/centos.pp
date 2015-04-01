@@ -94,3 +94,7 @@ package { 'subversion':
     ensure => installed
 }
 
+package { 'expect':
+    ensure => installed
+}
+
