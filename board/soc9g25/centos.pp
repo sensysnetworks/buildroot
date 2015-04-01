@@ -98,3 +98,7 @@ package { 'expect':
     ensure => installed
 }
 
+package { 'tftp':
+    ensure => installed
+}
+
