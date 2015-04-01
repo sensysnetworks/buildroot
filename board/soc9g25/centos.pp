@@ -86,6 +86,10 @@ package { 'cvs':
     ensure => installed
 }
 
+package { 'ncurses-devel':
+    ensure => installed
+}
+
 package { 'subversion':
     ensure => installed
 }
